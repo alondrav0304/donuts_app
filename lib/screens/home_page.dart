@@ -1,3 +1,4 @@
+import 'package:donuts_app/utils/my_tab.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,31 +9,66 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Widget> myTabs = [
+    //donut tab
+    const MyTab(iconPath: 'lib/icons/donut.png'),
+    //burger tab
+    const MyTab(iconPath: 'lib/icons/burger.png'),
+    //smoothie tab
+    const MyTab(iconPath: 'lib/icons/smoothie.png'),
+    //pancake tab
+    const MyTab(iconPath: 'lib/icons/pancakes.png'),
+    //pizza tab
+    const MyTab(iconPath: 'lib/icons/pizza.png'),
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        //icono de la izquierda
-        leading: Icon(Icons.menu, color: Colors.grey[800],),
-        //icono de la derecha
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 24.0),
-            child: Icon(Icons.person),
-          ),
-        ],
-      ),
-      body: const Column(
-        children: [
-          //texto principal
+    return DefaultTabController(
+      length: myTabs.length,
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          //icono de la izquierda
+          leading: Icon(Icons.menu, color: Colors.grey[800]),
+          //icono de la derecha
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 24.0),
+              child: Icon(Icons.person),
+            ),
+          ],
+        ),
+        body: Column(
+          children: [
+            //texto principal
+            const Padding(
+              padding: EdgeInsets.only(left: 24.0),
+              child: Row(
+                children: [
+                  Text(
+                    'I want to ',
+                    style: TextStyle(fontSize: 24),
+                  ),
+                  Text(
+                    'EAT',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                    ),
+                  )
+                ],
+              ),
+            ),
 
-          //pestañas tab bar
+            //pestañas (TabBar)
+            TabBar(tabs: myTabs),
 
-          //contenido de pestañas tabbar view
-
-          //carrito car
-        ],
+            //contenido de pestañas tabbar view
+            //carrito car
+          ],
+        ),
       ),
     );
   }
