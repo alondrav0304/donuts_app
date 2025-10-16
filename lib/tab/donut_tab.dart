@@ -5,28 +5,28 @@ import 'package:flutter/material.dart';
 final List donutOnSale = [
   //DonutFlavor, donutPrice, DonutColor, DonutImagePath, DonutProvider
   [
-    'Chocolate Frosted',
+    'Chocolate',
     '100',
     Colors.brown,
     'lib/imagenes/chocolate_donut.png',
     'Starbucks',
   ],
   [
-    'Strawberry Frosted',
+    'Strawberry',
     '120',
     Colors.pink,
     'lib/imagenes/strawberry_donut.png',
-    'Oxxo',
+    'Krispy Kreme',
   ],
   [
-    'Vanilla Frosted',
+    'Grape',
     '80',
     Colors.purple,
     'lib/imagenes/grape_donut.png',
-    'Starbucks',
+    'Oxxo',
   ],
   [
-    'Glazed',
+    'Ice Cream',
     '90',
     Colors.orange,
     'lib/imagenes/icecream_donut.png',
