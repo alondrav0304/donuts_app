@@ -39,8 +39,8 @@ lib/
 └── main.dart                # App entry point  
 
 ## 📚 Course Information
-Subject: Mobile Application Development
-Instructor: Rodrigo Fidel Gaxiola
+- Subject: Mobile Application Development
+- Instructor: Rodrigo Fidel Gaxiola
 
 ## 💡 Design Credits
 Original design inspired by App UI on Dribbble by Dstudio
