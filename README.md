@@ -1,16 +1,42 @@
-# donuts_app
+# 🍩 Donuts App
 
-A new Flutter project.
+A simple and elegant Flutter application inspired by a modern food ordering interface.
+This app displays different food categories — Donuts, Burgers, Pancakes, Pizzas, and Smoothies — using a rounded TabBar with icons and labels.
 
-## Getting Started
+## ✨ Main Functionalities
+- 🧭 Category navigation through a rounded TabBar
+- 🍔 Each tab displays a specific food category (Donut, Burger, etc.)
+- 🎨 Custom tab design with black borders and separated text labels
+- 🧱 Responsive layout that prevents overflow and maintains alignment
+- 🧁 Clean visual design inspired by a Dribbble concept
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## 🧩 Main Widgets Description
+- MyTab → Custom widget for each tab. Displays an icon inside a rounded black border and a label below it.
+- DonutTile → Displays donut product information such as name, flavor, and price.
+- HomePage → The main screen that contains the TabBar and manages category navigation.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Technologies
+- 🧡 Flutter — UI framework
+- 💻 Dart — Programming language
+- 🎨 Material Design — UI design foundation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🗂️ Project Structure
+lib/  
+├── icons/                   # App icons and vector assets  
+├── imagenes/                # Donut and UI images  
+├── screens/  
+│   └── home_page.dart       # Main home screen with category navigation  
+├── tab/  
+│   ├── burger_tab.dart      # Tab for burger items  
+│   ├── donut_tab.dart       # Tab for donut items  
+│   ├── pancake_tab.dart     # Tab for pancake items  
+│   ├── pizza_tab.dart       # Tab for pizza items  
+│   └── smoothie_tab.dart    # Tab for smoothie items  
+├── utils/  
+│   ├── donut_tile.dart      # Widget displaying donut info  
+│   └── my_tab.dart          # Widget for tab design  
+└── main.dart                # App entry point  
+
+## 💡 Design Credits
+Original design inspired by App UI on Dribbble by Dstudio
