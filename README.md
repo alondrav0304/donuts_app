@@ -38,5 +38,12 @@ lib/
 │   └── my_tab.dart          # Widget for tab design  
 └── main.dart                # App entry point  
 
+## 📚 Course Information
+Subject: Mobile Application Development
+Instructor: Rodrigo Fidel Gaxiola
+
 ## 💡 Design Credits
 Original design inspired by App UI on Dribbble by Dstudio
+
+## ✨Author 
+Alondra M. Vidal Te
